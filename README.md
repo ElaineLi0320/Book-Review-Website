@@ -90,7 +90,6 @@ This project is a full-stack web application for managing book reviews. It allow
 - **GET /books/:id**: Retrieve a single book review by ID
 - **POST /books**: Create a new book review
 - **PUT /books/:id**: Update a book review by ID
-- **PATCH /books/:id**: Partially update a book review by ID
 - **DELETE /books/:id**: Delete a book review by ID
 
 ## Example Request Bodies
@@ -116,10 +115,3 @@ This project is a full-stack web application for managing book reviews. It allow
 }
 \`\`\`
 
-## Contributing
-
-If you would like to contribute to this project, please fork the repository and submit a pull request. Issues and feature requests are welcome.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
