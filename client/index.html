@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Reviews</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book Reviews</h1>
+      <div id="book-list"></div>
+      <button onclick="showAddForm()">Add New Book</button>
+    </div>
+
+    <div id="add-form" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeAddForm()">&times;</span>
+        <h2>Add New Book</h2>
+        <form id="bookForm" onsubmit="addBook(event)">
+          <label for="id">ID:</label><br />
+          <input
+            type="number"
+            id="id"
+            name="id"
+            min="0"
+            max="999"
+            required
+          /><br />
+          <label for="title">Title:</label><br />
+          <input type="text" id="title" name="title" required /><br />
+          <label for="author">Author:</label><br />
+          <input type="text" id="author" name="author" required /><br />
+          <label for="description">Description:</label><br />
+          <textarea
+            id="description"
+            name="description"
+            rows="4"
+            required
+          ></textarea
+          ><br />
+          <button type="submit">Add Book</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="detail-view" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeDetailView()">&times;</span>
+        <h2>Book Details</h2>
+        <div id="book-details"></div>
+        <button id="edit-button" onclick="showEditForm()">Edit</button>
+        <button id="delete-button" onclick="deleteBook()">Delete</button>
+      </div>
+    </div>
+
+    <div id="edit-form" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeEditForm()">&times;</span>
+        <h2>Edit Book</h2>
+        <form id="editBookForm" onsubmit="updateBook(event)">
+          <label for="edit-id">ID:</label><br />
+          <input
+            type="number"
+            id="edit-id"
+            name="id"
+            min="0"
+            max="999"
+            required
+          /><br />
+          <label for="edit-title">Title:</label><br />
+          <input type="text" id="edit-title" name="title" required /><br />
+          <label for="edit-author">Author:</label><br />
+          <input type="text" id="edit-author" name="author" required /><br />
+          <label for="edit-description">Description:</label><br />
+          <textarea
+            id="edit-description"
+            name="description"
+            rows="4"
+            required
+          ></textarea
+          ><br />
+          <button type="submit">Update Book</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

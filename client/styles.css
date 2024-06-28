@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  width: 80%;
+}
+
+.close {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #666666;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #333333;
+}
+
+/* Styling for book list */
+.book-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  background-color: #f9f9f9;
+}
+
+.book-item:hover {
+  background-color: #e9e9e9;
+}
+
+.book-item h3 {
+  margin-top: 0;
+}
+
+.book-item p {
+  margin-bottom: 5px;
+}
+
+.book-item button {
+  margin-top: 5px;
+}
